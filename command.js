@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { REST, Routes } from "discord.js";
 
 const commands = [
@@ -12,7 +13,7 @@ const commands = [
 ];
 
 const rest = new REST({ version: "10" }).setToken(
-  "MTI2MTY2NTIxNDUxNzA4NDI0MQ.GmjBlF.lo1gJ9uEbaiCAtk7XBaTEgBe2HlJGNvv1MLTUg"
+  process.env.token
 );
 
 try {

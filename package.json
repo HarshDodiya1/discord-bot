@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "description": "Welcome to the Discord Ticket System! This project is designed to help you manage support tickets on your Discord server efficiently.",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "node index.mjs",
-    "type": "module"
+    "start": "node index.mjs"
   },
   "keywords": [],
   "author": "Elite Coders",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
     "@discordjs/rest": "^2.3.0",
     "chalk": "^4.1.2",

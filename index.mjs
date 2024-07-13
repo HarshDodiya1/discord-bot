@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { Client, GatewayIntentBits } from "discord.js";
 const client = new Client({
   intents: [
@@ -7,9 +8,9 @@ const client = new Client({
   ],
 });
 
-import { configDotenv } from "dotenv";
 
 client.on("messageCreate", (message) => {
+  
   console.log(message.content);
 });
 client.on("messageCreate", (message) => {
@@ -38,11 +39,6 @@ client.on("messageCreate", (message) => {
 });
 
 
+client.login(process.env.token)
 
-console.log("This is my token : ", process.env.token);
 
-// client.login(process.env.token)
-
-client.login(
-  "MTI2MTY2NTIxNDUxNzA4NDI0MQ.GmjBlF.lo1gJ9uEbaiCAtk7XBaTEgBe2HlJGNvv1MLTUg"
-);
